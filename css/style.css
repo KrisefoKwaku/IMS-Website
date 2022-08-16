@@ -1,32 +1,7 @@
-/******* Bootstrap Theming ********/
-/*!
- * Bootstrap v4.5.3 (https://getbootstrap.com/)
- * Copyright 2011-2020 The Bootstrap Authors
- * Copyright 2011-2020 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
 :root {
-  --blue: #007bff;
-  --indigo: #6610f2;
-  --purple: #6f42c1;
-  --pink: #4f190b;
-  --red: #4f190b;
-  --orange: #fd7e14;
-  --yellow: #ffc107;
-  --green: #28a745;
-  --teal: #20c997;
-  --cyan: #17a2b8;
-  --white: #ecd4bd;
-  --gray: #4f190b;
-  --gray-dark: #4f190b;
-  --primary: #ecd4bd;
-  --secondary: #6ebbf6;
-  --success: #28a745;
-  --info: #17a2b8;
-  --warning: #ffc107;
-  --danger: #4f190b;
-  --light: #ecd4bd;
-  --dark: #211e1c;
+  --white: #ffff
+  --deep-blue: #161167
+  --orange: ##F5AE1C;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -41,6 +16,10 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
 }
 
 html {
@@ -48,22 +27,6 @@ html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-article,
-aside,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-nav,
-section {
-  display: block;
-}
-div > nav {
-  position: sticky;
 }
 
 body {
@@ -77,71 +40,6 @@ body {
   background-color: var(--white);
 }
 
-div > a > img {
-  height: 5px;
-  width: 5px;
-}
-.main-container {
-  display: block;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-@media (max-width: 1200px) {
-  h1,
-  .h1 {
-    font-size: calc(1.375rem + 1.5vw);
-  }
-  legend {
-    font-size: calc(1.275rem + 0.3vw);
-  }
-}
-
-h2,
-.h2 {
-  font-size: 2rem;
-}
-
-@media (max-width: 1200px) {
-  h2,
-  .h2 {
-    font-size: calc(1.325rem + 0.9vw);
-  }
-}
-
-h3,
-.h3 {
-  font-size: 1.75rem;
-}
-
-@media (max-width: 1200px) {
-  h3,
-  .h3 {
-    font-size: calc(1.3rem + 0.6vw);
-  }
-}
-
-h4,
-.h4 {
-  font-size: 1.5rem;
-}
-
-@media (max-width: 1200px) {
-  h4,
-  .h4 {
-    font-size: calc(1.275rem + 0.3vw);
-  }
-}
-
-h5,
-.h5 {
-  font-size: 1.25rem;
-}
-
-h6,
-.h6 {
-  font-size: 1rem;
+nav{
+  background: var(--deep-blue);
 }
