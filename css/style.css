@@ -39,7 +39,7 @@ body {
 }
 
 nav{
-  background: var(--deep-blue);
+  background: blue;
   height: 80px;
   width: 100%;
   line-height: 80px;
