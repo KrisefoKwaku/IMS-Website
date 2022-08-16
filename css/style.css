@@ -58,6 +58,7 @@ nav ul li{
 nav ul li a{
   color: var(--white);
   font-size: 17px;
+  text-transform: uppercase;
 }
 a.active, a:hover{
   background: var(--orange);
