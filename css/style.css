@@ -50,7 +50,7 @@ nav ul{
   float: right;
   margin-right: 10px;
 }
-nav ul li{
+nav ul li, nav ul label{
   display: inline-block;
   line-height: 70px;
   margin: 0 5px;
