@@ -77,8 +77,10 @@ a:hover{
 }
 
 .logo img{
-  size-adjust: 20%;
   position: absolute;
-  margin-top: 5px;
-  margin-left: 10px;
+  margin-top: -67px;
+  margin-left: -31px;
+  width: 233px;
+  height: 204px;
+  background: var(--white);
 }
