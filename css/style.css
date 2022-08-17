@@ -1,7 +1,7 @@
 :root {
   --white: #ffff;
   --deep-blue: #040235;
-  --orange: #F5AE1C;
+  --orange: #fa7f0c;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -62,8 +62,14 @@ nav ul li a{
   font-size: 17px;
 }
 
-a.active, a:hover{
+a.active{
   background: var(--deep-blue);
+  color: var(--orange);
+  text-transform: uppercase;
+}
+
+a:hover{
+  background: var(--orange);
   transition: 0.5s;
   color: var(--orange);
   text-transform: uppercase;
