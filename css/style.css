@@ -76,6 +76,7 @@ a:hover{
 }
 
 .logo img{
+  size-adjust: 20%;
   position: absolute;
   margin-top: 5px;
   margin-left: 10px;
