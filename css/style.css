@@ -47,21 +47,29 @@ nav{
   font-weight: bold;
 }
 nav ul{
-  float: right;
+  float: left;
   margin-right: 10px;
 }
-nav ul li, nav ul label{
+nav ul li{
   display: inline-block;
   line-height: 70px;
   margin: 0 5px;
+  padding: 10px 15px;
+
 }
 nav ul li a{
   color: var(--white);
   font-size: 17px;
-  text-transform: uppercase !important;
 }
 a.active, a:hover{
   background: var(--deep-blue);
   transition: 0.5s;
   color: var(--orange);
+  text-transform: uppercase;
+}
+
+.logo img{
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 10px;
 }
