@@ -47,7 +47,7 @@ nav{
   font-weight: bold;
 }
 nav ul{
-  float: left;
+  float: right;
   margin-right: 10px;
 }
 nav ul li{
@@ -61,6 +61,7 @@ nav ul li a{
   color: var(--white);
   font-size: 17px;
 }
+
 a.active, a:hover{
   background: var(--deep-blue);
   transition: 0.5s;
