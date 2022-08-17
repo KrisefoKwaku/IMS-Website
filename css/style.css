@@ -57,6 +57,11 @@ nav ul li{
   padding: 10px 15px;
 
 }
+
+li a:hover{
+  background: var(--orange);
+  transition: 0.5s;
+}
 nav ul li a{
   color: var(--white);
   font-size: 17px;
@@ -69,9 +74,8 @@ a.active{
 }
 
 a:hover{
-  background: var(--orange);
+  text-transform: uppercase;
   transition: 0.5s;
-  color: var(--orange);
 }
 
 .logo img{
