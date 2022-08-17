@@ -72,7 +72,6 @@ a:hover{
   background: var(--orange);
   transition: 0.5s;
   color: var(--orange);
-  text-transform: uppercase;
 }
 
 .logo img{
