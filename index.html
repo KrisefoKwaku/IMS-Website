@@ -11,11 +11,15 @@
     <link href="images/ims-logo.png" rel="icon" />
 
     <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Euphoria+Script&family=Poppins:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./resources/css/queries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
     <!-- Font Awesome -->
     
@@ -32,6 +36,247 @@
 
   <body>
     <!-- Header -->
+    <header class="" id="header">
+
+      <nav class=" ">
+          <div class="main-nav">
+              <div class="logo-wrap">
+              <a href="#" class="white-link "><img src="./images/ims-white-logo.png" alt="ims-ghana" class="ims-white-logo"></a> 
+              <a href="#" class="blue-link no-show"><img src="./images/ims-blue-logo.png" alt="ims-ghana" class="ims-blue-logo"></a>
+              </div>
+              <ul class="nav-links">
+                  <li><a href="#Claims">Claims</a></li>
+                  <li><a href="#Motor">Motor Insurance</a></li>
+                  <li><a href="#Fire">Fire Insurance</a></li>
+                  <li><a href="#Services" class="sc-services">Services</a></li>
+                  <li><a href="#About" class="sc-about" >About</a></li>
+                  <!-- <li><a href="#News">News</a></li> -->
+                  <li>
+                      <a href="tel:+233243837432">
+                          <i class="fa-solid fa-phone"></i>
+                          <!-- +233 (0)24 383 7432 -->
+                      </a>
+                  </li>
+                  <li>
+                      <a href="mailto:info@ims-ghana.com">
+                          <i class="fa-solid fa-at"></i>
+                          <!-- info@ims-ghana.com -->
+                      </a>
+                 </li>
+              </ul>
+          </div>
+
+      </nav> 
+
+      <div class="hero-text-box">
+          <h1>Need help with insurance claims?</h1>
+          <div class="hero-btn-box">
+              <a class="btn btn-full" href="#">Claim Now</a>
+              <a class="btn btn-ghost" href="#">Learn More</a>
+          </div>
+      </div>
+
+
+  </header>
+
+  <section class="section-services js-section-services" id="services">
+      <div class="container grid-container-section">
+          <div class="grid-row section-title">
+              <h2>BETTER INSURANCE FOR EVERYONE</h2>
+              <p class="long-copy">
+                  IMS makes it easy to insure and also claim on your insurance.
+              </p>
+          </div>
+          <div class="grid-row section-grid-boxes">
+              <div class="col">
+                  <i class="fa-solid fa-chalkboard-user icon-big"></i>
+                  <h3> Claims Management</h3>
+                  <p>
+                      Claims processing is at the heart of our services. We pride ourselves in ensuring that your
+                      claims filing, processing and payment is seamless.
+                  </p>
+                  <a href="#" class="btn-link readmore"> read more </a>
+              </div>
+              <div class="col">
+                  <i class="fas fa-car icon-big"></i>
+                  <h3> Motor Insurance</h3>
+                  <p>
+                      Get the best deals from our carefully selected industry deals
+                  </p>
+                  <a href="#" class="btn-link readmore"> read more </a>
+              </div>
+
+              <div class="col">
+                  <i class="fa-solid fa-plane-departure icon-big"></i>
+                  <h3> Travel Insurance</h3>
+                  <p>
+                      Get travel Insurance on the go.<br /> We will get it to you when need it.
+                  </p>
+                  <a href="#" class="btn-link readmore"> read more </a>
+              </div>
+
+              <div class="col">
+                  <i class="fa-solid fa-house-crack icon-big"></i>
+                  <h3>Fire & Allied Perils</h3>
+                  <p>
+                      Secure your properties in some very simple steps. Take charge of the security of your property's
+                      securities with competitive offers from our partnes.
+                  </p>
+                  <a href="#" class="btn-link readmore"> read more </a>
+              </div>
+              <div class="col">
+                  <i class="fa-solid fa-people-roof icon-big"></i>
+                  <h3>Life Insurance</h3>
+                  <p>
+                      Secure your properties in some very simple steps. Take charge of the security of your property's
+                      securities with competitive offers from our partnes.
+                  </p>
+                  <a href="#" class="btn-link readmore"> read more </a>
+              </div>
+              <div class="col">
+                  <i class="fa-solid fa-file-signature icon-big"></i>
+                  <h3>Bonds</h3>
+                  <p>
+                      Secure your properties in some very simple steps. Take charge of the security of your property's
+                      securities with competitive offers from our partnes.
+                  </p>
+                  <a href="#" class="btn-link readmore"> read more </a>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <section class=" section-about js-section-about" id="about">
+      <div class="container grid-container-section">
+
+          <div class="grid-row section-title">
+              <h2>HELLO EVERYONE, IMS HERE</h2>
+              <p class="long-copy">
+                  Since 2017, Insurance Management Services has been serving
+                  policyholders and protecting businesses.
+              </p>
+          </div>
+
+          <div class="grid-row team-grid-box">
+
+              <div class="col team-card">
+                  <img src="./resources/images/Bianca-headshot.jpg" alt="board Chairman" class="team-img">
+                  <div class="member-profile">
+                      <i class="fa-solid fa-user icon-sm"></i>
+                      <span>Ms. Bianca Nadia Noshie</span>
+                  </div>
+                  <div class="member-profile">
+                      <i class="fa-solid fa-ranking-star icon-sm"></i>
+                      <span>Chief Executive Officer</span>
+                  </div>
+              </div>
+
+              <div class="col team-card">
+                  <img src="./resources/images/Bianca-headshot.jpg" alt="board Chairman" class="team-img">
+                  <div class="member-profile">
+                      <i class="fa-solid fa-user icon-sm"></i>
+                      <span>Ms. Bianca Nadia Noshie</span>
+                  </div>
+                  <div class="member-profile">
+                      <i class="fa-solid fa-ranking-star icon-sm"></i>
+                      <span>Chief Executive Officer</span>
+                  </div>
+              </div>
+
+              <div class="col team-card">
+                  <img src="./resources/images/Bianca-headshot.jpg" alt="board Chairman" class="team-img">
+                  <div class="member-profile">
+                      <i class="fa-solid fa-user icon-sm"></i>
+                      <span>Ms. Bianca Nadia Noshie</span>
+                  </div>
+                  <div class="member-profile">
+                      <i class="fa-solid fa-ranking-star icon-sm"></i>
+                      <span>Chief Executive Officer</span>
+                  </div>
+              </div>
+
+              <div class="col team-card">
+                  <img src="./resources/images/Bianca-headshot.jpg" alt="board Chairman" class="team-img">
+                  <div class="member-profile">
+                      <i class="fa-solid fa-user icon-sm"></i>
+                      <span>Ms. Bianca Nadia Noshie</span>
+                  </div>
+                  <div class="member-profile">
+                      <i class="fa-solid fa-ranking-star icon-sm"></i>
+                      <span>Chief Executive Officer</span>
+                  </div>
+              </div>
+          </div>
+
+          <div class="grid-row contact-row">
+              <a class="col contact-card" href="tel:+233243837432">
+                  <i class="fa-solid fa-phone-volume air-sm"></i>
+                  Call Now
+                  <strong> +233 (0)24 383 7432</strong>
+
+              </a>
+              <div class="center-dot">
+                  <strong>OR</strong>
+              </div>
+              <a class="col contact-card" href="https://goo.gl/maps/sfD2pZ2amKrX2trTA" target="_blank">
+                  <i class="fa-solid fa-map-location-dot air-sm"></i>
+                  Visit Us
+                  <address> No. 3 Afram Road, Accra</address>
+              </a>
+          </div>
+
+      </div>
+  </section>
+  <section class="partners" id="partners">
+      <div class="grid-row section-title">
+          <h2>OUR PARTNERS</h2>
+          <p class="long-copy">
+              Get the best from a variety of unique products from our partners.
+          </p>
+      </div>
+      <div class="grid-row partners-row">
+          <ul class="partners-list">
+              <li><img src="./images/hollard.png" alt="hollard"></li>
+              <li><img src="./images/SIC-logo.jpg" alt="hollard"></li>
+              <li><img src="./images/sunu.png" alt="hollard"></li>
+              <li><img src="./images/VA.png" alt="VA"></li>
+              <li><img src="./images/star-assurance-logo.png" alt="starassurance"></li>
+              <li><img src="./images/qic.png" alt="qicghana"></li>
+              <li><img src="./images/enterprise-insurance.png" alt="enterprisegroup"></li>
+              <li><img src="./images/glicogroup-logo.png" alt="glico"></li>
+              <li><img src="./images/Priority-Insurance-_Logo.png" alt="glico"></li>
+              <li><img src="./images/prime-insurance.png" alt="glico"></li>
+              <li><img src="./images/nsiah.png" alt="glico"></li>
+          </ul>
+      </div>
+
+  </section>
+
+  <footer>
+      <div class="grid-row footer-head">
+          <ul class="footer-nav">
+              <li>
+                  <a href="#" class="ims-gray-logo"><img src="./images/ims-white.png" alt="ims-ghana"> </a>
+              </li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Blog</a></li>
+          </ul>
+
+          <ul class="social-links">
+              <li><a href="mailto:info@ims-ghana.com"><i class="fa-regular fa-envelope"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+          </ul>
+      </div>
+      <div class="grid-row copy-right">
+          <p><small>Insurance Management Services is registered insurance broker in good standing with the <a
+                      href="https://nicgh.org/" target="_blank" class="link">National Insurance Commission (NIC) -
+                      Ghana</a></small></p>
+          <p><small>Copyright&copy; 2022 by ims-ghana. </small></p>
+      </div>
+  </footer>
 
     
     <!-- Topbar Start -->
@@ -39,18 +284,7 @@
     <!-- Topbar End -->
 
     <!-- Navbar Start -->
-    <div class="logo">
-      <a href="/index.html"><img src="./images/ims-logo.png" alt=""></a>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#" class="active">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Management</a></li>
-        <li><a href="#">News</a></li>
-      </ul>
-    </nav>
+    
     <!-- Navbar End-->
     <!-- Carousel Start (Do We Need One?) -->
     
