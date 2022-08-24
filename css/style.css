@@ -181,7 +181,7 @@ h2:after{
   height: 2px;
   background-color: var(--ims-orange);
   content: " ";
-  width: 4rem;
+  width: 13rem;
   margin: .5rem auto;
 }
 
@@ -536,4 +536,10 @@ footer a:hover{
     height: 100%;
     font-weight: 400;
   }
+  .contact-card .center-dot{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+
+  } 
 }
