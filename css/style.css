@@ -475,10 +475,11 @@ footer a:hover{
 
 /* MOBILE VIEW STYLING */
 
-@media (min-width: 576px) {
-  body{
+@media only screen and (max-width: 600px) {
+  body, html{
     min-height: 100vh;
-    max-width: var(--breakpoint-sm);
+    width: 100%;
+    overflow-x: hidden;
   }
   .container{
     width: 100%;
