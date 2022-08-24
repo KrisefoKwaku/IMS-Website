@@ -42,7 +42,7 @@ header{
   background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(./images/make-claim.jpg);
   background-size: cover;
   background-position: center;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   position: relative;
   background-attachment: fixed;
