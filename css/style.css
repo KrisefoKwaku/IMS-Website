@@ -480,7 +480,11 @@ footer a:hover{
     min-height: 100vh;
     max-width: 100%;
   }
-
+  .container{
+    width: 100%;
+    max-width: var(--breakpoint-sm);
+    margin: 0 auto;
+  }
   header{
     min-height: 100vh;
   }
