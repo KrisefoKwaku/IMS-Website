@@ -468,3 +468,20 @@ footer a:hover{
   text-align: center;
  
 }
+
+
+
+
+
+/* MOBILE VIEW STYLING */
+
+@media (min-width: 576px) {
+  body{
+    min-height: 100vh;
+    max-width: 100%;
+  }
+
+  header{
+    min-height: 100vh;
+  }
+}
