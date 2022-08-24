@@ -30,7 +30,8 @@ html{
   font-size: var(--font-size);
   text-rendering: optimizeLegibility;
   list-style: none;
-   min-height: -webkit-fill-available
+  min-height: -webkit-fill-available;
+  overflow-x: hidden;
 }
 body{
   min-height: 100vh;
