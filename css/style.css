@@ -499,4 +499,9 @@ footer a:hover{
     grid-template-columns: 1fr 1fr/repeat(2, 1fr);
     gap: 0.5em;
   }
+  .team-grid-box {
+    display: grid;
+    grid-template: 1fr/repeat(2, 1fr);
+    margin: 1rem 0;
+  }
 }
