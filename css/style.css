@@ -383,6 +383,18 @@ a.btn-link {
   height: 100%;
   font-weight: 400;
 }
+.contact-card:hover{
+  background: var(--ims-orange);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 30%;
+  padding:1rem 2rem;
+  text-decoration: none;
+  height: 100%;
+  font-weight: 400;
+}
 
 .center-dot{
       margin: 0;
@@ -391,7 +403,7 @@ a.btn-link {
       border-style: solid;
       border-width: 5px;
       border-color: #fff;
-      border-radius: 50px;
+      border-radius: 50%;
       box-shadow: 0px 0px 1px 1px #003478 inset;
       font-weight: bold;
       color: var(--ims-orange);
@@ -494,6 +506,9 @@ footer a:hover{
   .header-nav{
     display: none;
   }
+  .ims-blue-logo{
+    display: inline;
+  }
   .section-grid-boxes{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -503,5 +518,22 @@ footer a:hover{
     display: grid;
     grid-template: 1fr/repeat(2, 1fr);
     margin: 1rem 0;
+  }
+  .contact-row {
+    display: grid;
+    grid-template: repeat(1, 1fr);
+    margin: 1rem 0;
+  }
+  .contact-card{
+    background: var(--ims-blue);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 30%;
+    padding:1rem 1rem;
+    text-decoration: none;
+    height: 100%;
+    font-weight: 400;
   }
 }
