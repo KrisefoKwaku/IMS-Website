@@ -127,7 +127,7 @@ nav{
 .ims-white-logo,
 .ims-blue-logo,
 .ims-gray-logo{
-  height: 2rem;
+  height: 3rem;
   width: auto;
 }
 .no-show{
@@ -493,5 +493,9 @@ footer a:hover{
   }
   .header-nav{
     display: none;
+  }
+  .class-services{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
