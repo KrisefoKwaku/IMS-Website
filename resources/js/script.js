@@ -26,19 +26,6 @@ $(
       }
     });
 
-    // $("#Motor").waypoint(
-    //   function (direction) {
-    //     if (direction == "down") {
-    //       $("nav").addClass("sticky");
-    //     } else {
-    //       $("nav").removeClass("sticky");
-    //       // $("nav").removeClass("white-sticky");
-    //     }
-    //     console.log("rolling stone");
-    //   },
-    //   { offset: "150px;" }
-    // );
-
     $("#Motor").waypoint(function (direction) {
       if (direction == "down") {
         $("nav").addClass("sticky");
@@ -48,6 +35,14 @@ $(
         $("nav").removeClass("sticky");
         $(".white-link").removeClass("no-show");
         $(".blue-link").addClass("no-show");
+      }
+    });
+
+    $("section").waypoint(function (direction) {
+      if (direction == "down") {
+        $("nav").addClass("sticky");
+      } else {
+        $("nav").removeClass("sticky");
       }
     });
 

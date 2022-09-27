@@ -1,6 +1,7 @@
 :root {
   --white: #ffff;
   --mild-gray: #555;
+  --light-gray: rgb(244, 244, 244);
   --ims-blue: #003478; /* #273b6a; */
   --ims-orange: #eb5930;
   --breakpoint-xs: 0;
@@ -100,7 +101,7 @@ h2:after {
   max-width: var(--breakpoint-xl);
   margin: 0 auto;
   overflow: auto;
-  padding: 0 40px;
+  padding: 0 2rem;
 }
 
 .vh {
@@ -146,7 +147,6 @@ h2:after {
   margin: 0.5rem;
 }
 
-
 /*----------------------BUTTONS-----------------------*/
 .btn:link,
 .btn:visited {
@@ -158,6 +158,20 @@ h2:after {
   transition: background-color 0.1s, boarder 0.1s, color 0.1s;
   margin: 0 0.5rem;
 }
+
+.btn-sm:link,
+.btn-sm:visited {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  text-decoration: none;
+  font-size: 90%;
+  border-radius: 5rem;
+  color: var(--white);
+  transition: background-color 0.1s, boarder 0.1s, color 0.1s;
+  margin: 0.1rem;
+  border: 2px;
+}
+
 .btn-full:link,
 .btn-full:visited {
   background-color: var(--ims-orange);
@@ -169,6 +183,13 @@ h2:after {
   color: var(--ims-orange);
 }
 
+.btn-ghost-blue:link,
+.btn-ghost-blue:visited {
+  border: 0.1rem solid var(--ims-blue);
+  color: var(--ims-blue);
+}
+.btn-sm:hover,
+.btn:active,
 .btn:hover,
 .btn:active {
   background-color: var(--ims-blue);
@@ -181,9 +202,8 @@ h2:after {
   color: var(--ims-orange);
   font-size: 150%;
   display: block;
-  padding: 0.2rem 0;
+  padding: 0.5rem 0;
 }
-
 
 .m-1 {
   margin: 1rem;
