@@ -469,8 +469,8 @@ a.btn-link {
 .profile-avatar {
   padding: 1rem;
 }
-.profile-card {
-}
+/* .profile-card {
+} */
 
 .profile-card {
   line-height: 150%;
@@ -493,8 +493,8 @@ a.btn-link {
     url(/resources/images/services/travel-copy.jpg);
   height: 600px;
 }
-.travel-insurance-copy .travel-copy {
-}
+/* .travel-insurance-copy .travel-copy {
+} */
 
 /*---------------------------------------------*/
 
