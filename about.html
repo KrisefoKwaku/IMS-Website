@@ -8,15 +8,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="IMS is a premium and industry leader in the insurance brokerage services in Ghana" name="keywords" />
     <meta content="Insurance Management Services" name="description" />
+    <meta content="Motor Insurance, Fire Insurance, Car Insurance, Claims" name="description" />
+    <meta content="Insurance Management Services" name="description" />
 
     
     <!-- Nomalize css -->
-    <link rel="stylesheet" type="text/css" href="./vendors/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
     <!-- Local Style -->
-    <link rel="stylesheet" type="text/css" href="./resources/css/utilities.css">
-    <link rel="stylesheet" type="text/css" href="./resources/css/style.css">
-    <link rel="stylesheet" type="text/css" href="./resources/css/queries.css">
-    <link rel="stylesheet" href="./vendors/css/animate.css"/>
+    <link rel="stylesheet" type="text/css" href="resources/css/utilities.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+    <link rel="stylesheet" href="vendors/css/animate.css"/>
     <!-- Google fonts and awesome icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,11 +28,13 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./resources/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./resources/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./resources/favicons/favicon-16x16.png">
-    <link rel="manifest" href="./resources/favicons/site.webmanifest">
-
+    <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/site.webmanifest.html">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <title>ims-ghana</title>
 </head>
 
@@ -44,15 +48,15 @@
           <a href="index.html">Home</a>
           <a href="services.html">Services</a>
           <a href="about.html">About Us</a>
-          <a href="#our-team">Our Team</a>
-          <a href="#our-board">Our Board</a>
+          <a href="about.html#our-team">Our Team</a>
+          <a href="about.html#our-board">Our Board</a>
   
   
           <a href="tel:+233243837432">
             <i class="fa-solid fa-phone"></i>
           </a>
           <a href="mailto:info@ims-ghana.com">
-            <i class="fa-solid fa-at"></i>
+            <i class="fa-solid fa-envelope"></i>
           </a>
         </div>
       </div>
@@ -60,9 +64,9 @@
         <nav class="header">
           <div class="main-nav">
             <div class="logo-wrap">
-              <a href="#" class="blue-link"
+              <a href="index.html" class="blue-link"
                 ><img
-                  src="./resources/images/ims-blue-logo.png"
+                  src="resources/images/ims-blue-logo.png"
                   alt="ims-ghana"
                   class="ims-blue-logo"
               /></a>
@@ -71,8 +75,8 @@
               <li><a href="index.html">Home</a></li>
               <li><a href="services.html">Services</a></li>
               <li><a href="about.html">About Us</a></li>
-              <li><a href="#our-team">Our Team</a></li>
-              <li><a href="#our-board">Our Board</a></li>
+              <li><a href="about.html#our-team">Our Team</a></li>
+              <li><a href="about.html#our-board">Our Board</a></li>
   
               <li>
                 <a href="tel:+233243837432">
@@ -82,15 +86,18 @@
               </li>
               <li>
                 <a href="mailto:info@ims-ghana.com">
-                  <i class="fa-solid fa-at"></i>
+                  <i class="fa-solid fa-envelope"></i>
                   <!-- info@ims-ghana.com -->
                 </a>
               </li>
             </ul>
-            <a href="#" class="mobile-menu" id="mobile-menu">
+            <a href="about.html#" class="mobile-menu" id="mobile-menu">
               <i class="fa-solid fa-bars"></i>
             </a>
           </div>
+           <div class="progress-container">
+                <div class="progress-bar" id="myBar"></div>
+            </div>
         </nav>
       </header>
   
@@ -101,8 +108,8 @@
                 <h2>About Us</h2>
                 <p>
                     Insurance Management Services Limited (IMS), is an Insurance Brokerage firm registered under
-                    Ghana Laws and operates under the Insurance Act, 2006 (Act 724). We are also registered with
-                    the National Insurance Commission of Ghana and the Insurance Brokers Association of Ghana.
+                    Ghana Laws and operates under the Insurance Act, 2006 (Act 724). We are registered with
+                    the National Insurance Commission of Ghana and an active member of the Insurance Brokers Association of Ghana.
                     </p><p>
                     IMS offers risk management and advisory services to individuals and corporate entities by
                     acting as an intermediary between our clients and insurance companies in Ghana.
@@ -137,7 +144,7 @@ end, we go to great lengths to ensure our valuable clients receive first-rate se
             <div class="grid-row team-card">
               
                 <div class="profile-avatar">
-                    <img src="./resources/images/our-team/Bianca-headshot.jpg" alt="board Chairman" class="team-img">
+                    <img src="resources/images/our-team/Bianca-headshot.jpg" alt="board Chairman" class="team-img">
                 </div>
 
                 <div class="profile-card">
@@ -170,7 +177,7 @@ end, we go to great lengths to ensure our valuable clients receive first-rate se
             <div class="grid-row team-card">
               
                 <div class="profile-avatar">
-                    <img src="./resources/images/our-team/Bianca-headshot.jpg" alt="board Chairman" class="team-img">
+                    <img src="resources/images/our-team/Zisse.jpg" alt="board Chairman" class="team-img">
                 </div>
 
                 <div class="profile-card">
@@ -180,7 +187,7 @@ end, we go to great lengths to ensure our valuable clients receive first-rate se
                     </div>
                     <p class="profile-copy">
                         Mr. Nutsuglo is a graduate of the University of Ghana and holds an MPhil in Risk Management and Insurance and a Bsc. in Statistics. 
-                        He has over two years of working experience in sales from different industries coupled with both academic and industial knowledge in data analytics  and market research.
+                        He has over two years of working experience in sales from different industries coupled with both academic and industrial knowledge in data analytics  and market research.
                     </p>
                 </div>
 
@@ -193,7 +200,7 @@ end, we go to great lengths to ensure our valuable clients receive first-rate se
             <div class="grid-row team-card">
               
                 <div class="profile-avatar">
-                    <img src="./resources/images/our-team/Bianca-headshot.jpg" alt="board Chairman" class="team-img">
+                    <img src="resources/images/our-team/Percy.jpg" alt="Administrative Manager" class="team-img">
                 </div>
 
                 <div class="profile-card">
@@ -217,11 +224,7 @@ end, we go to great lengths to ensure our valuable clients receive first-rate se
             <div class="grid-row section-title">
                 <h2>Our Board</h2>
                 <p class="long-copy">
-                    Our trained and highly motivated staff provide 
-                    comprehensive, cost-effective and specially crafted
-                    insurance programs that meet the insurance and risk 
-                    management requirements of our clients.
-
+                   
                 </p>
             </div>
         </div>
@@ -232,7 +235,7 @@ end, we go to great lengths to ensure our valuable clients receive first-rate se
             <div class="grid-row team-card">
               
                 <div class="profile-avatar">
-                    <img src="./resources/images/our-team/Bianca-headshot.jpg" alt="board Chairman" class="team-img">
+                    <img src="resources/images/our-team/images.png" alt="Board Chairman" class="team-img">
                 </div>
 
                 <div class="profile-card">
@@ -256,7 +259,7 @@ end, we go to great lengths to ensure our valuable clients receive first-rate se
             <div class="grid-row team-card">
               
                 <div class="profile-avatar">
-                    <img src="./resources/images/our-team/Bianca-headshot.jpg" alt="board Chairman" class="team-img">
+                    <img src="resources/images/our-team/images.png" alt="Board Member" class="team-img">
                 </div>
 
                 <div class="profile-card">
@@ -282,7 +285,7 @@ end, we go to great lengths to ensure our valuable clients receive first-rate se
             <div class="grid-row team-card">
               
                 <div class="profile-avatar">
-                    <img src="./resources/images/our-team/Bianca-headshot.jpg" alt="board Chairman" class="team-img">
+                    <img src="resources/images/our-team/Bianca-headshot.jpg" alt="CEO" class="team-img">
                 </div>
 
                 <div class="profile-card">
@@ -301,7 +304,7 @@ end, we go to great lengths to ensure our valuable clients receive first-rate se
                         Risk Management from Cass Business School (City University, London). She also holds an Award in Customer Service in Insurance from the Chartered Insurance Institute UK.
                         Bianca has a passion for providing exceptional service to her clients,
                         detailed knowledge of the Insurance Industry as well as exceptional 
-                        skills in negotiation and customer care within the Industry.
+                        skills in negotiation and customer care within the industry.
 
                     </p>
                 </div>
@@ -315,25 +318,31 @@ end, we go to great lengths to ensure our valuable clients receive first-rate se
 
     <!-- Main Contact Section -->
     <section>
-         <div class="container">
-            <div class="grid-row contact-row js-wp-6 ">
-                <a class="col contact-card" href="tel:+233243837432">
-                    <i class="fa-solid fa-phone-volume air-sm"></i>
-                    Call Now
-                    <strong> +233 (0)24 383 7432</strong>
-    
-                </a>
-                <div class="center-dot">
-                    <strong>OR</strong>
-                </div>
-                <a class="col contact-card" href="https://goo.gl/maps/sfD2pZ2amKrX2trTA" target="_blank">
-                    <i class="fa-solid fa-map-location-dot air-sm"></i>
-                    Visit Us
-                    <address> No. 3 Afram Road, Accra</address>
-                </a>
+        <div class="container">
+            <div class="grid-row section-title">
+                <h2>TALK TO US FOR FREE</h2>
+                <p class="long-copy">
+                    This is more than just business for us.
+                </p>
             </div>
-         </div>
-    </section>
+           <div class="grid-row contact-row js-wp-6 ">
+               <a class="col contact-card" href="tel:+233243837432">
+                   <i class="fa-solid fa-phone-volume air-sm"></i>
+                   Call Now
+                   <strong> +233 (0)24 383 7432</strong>
+   
+               </a>
+               <div class="center-dot">
+                   <strong>OR</strong>
+               </div>
+               <a class="col contact-card" href="https://goo.gl/maps/sfD2pZ2amKrX2trTA" target="_blank">
+                   <i class="fa-solid fa-map-location-dot air-sm"></i>
+                   Visit Us
+                   <address> No. 3 Afram Road, Accra</address>
+               </a>
+           </div>
+        </div>
+   </section>
 
   
     <!-- Footer -->
@@ -341,18 +350,18 @@ end, we go to great lengths to ensure our valuable clients receive first-rate se
         <div class="grid-row footer-head">
             <ul class="footer-nav">
                 <li>
-                    <a href="#" class="logo-link"><img src="./resources/css/images/ims-white.png" alt="ims-ghana" class="ims-gray-logo">  </a>
+                    <a href="index.html" class="logo-link"><img src="resources/images/ims-white-logo.png"  alt="ims-ghana" class="ims-gray-logo">  </a>
                 </li>
-                <li><a href="#About">About us</a></li>
-                <li><a href="#Services">Services</a></li>
-                <li><a href="#">Blog</a></li>
+                <li><a href="about.html#About">About us</a></li>
+                <li><a href="about.html#Services">Services</a></li>
+                <li><a href="about.html#">Blog</a></li>
             </ul>
 
             <ul class="social-links">
                 <li><a href="mailto:info@ims-ghana.com"><i class="fa-regular fa-envelope"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="about.html#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="about.html#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="about.html#"><i class="fa-brands fa-instagram"></i></a></li>
             </ul>
         </div>
         <div class="grid-row copy-right">
@@ -364,15 +373,15 @@ end, we go to great lengths to ensure our valuable clients receive first-rate se
     </footer>
     
             <div class="whatsapp">
-              <a href="https://wa.me/233246386799?text=I'd%20like%20to%20make%20an%20inquiry%20" target="_blank" class="wapp">
+              <a href="https://wa.me/233504965034?text=I'd%20like%20to%20make%20an%20inquiry%20" target="_blank" class="wapp">
                 <i class="fa-brands fa-whatsapp wapp"></i>
               </a>
             </div>
          
     
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="./vendors/js/jquery.waypoints.min.js"></script>
-  <script src="./resources/js/script.js"></script>
+  <script src="vendors/js/jquery.waypoints.min.js"></script>
+  <script src="resources/js/script.js"></script>
 
 </body>
 </html>
