@@ -11,16 +11,16 @@
     <meta content="Insurance Management Services" name="description" />
 
     <!-- Nomalize css -->
-    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="https://www.ims-ghana.com/pages/services/vendors/css/normalize.css" />
     <!-- Local Style -->
     <link
       rel="stylesheet"
       type="text/css"
-      href="resources/css/utilities.css"
+      href="../../resources/css/utilities.css"
     />
-    <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
-    <link rel="stylesheet" type="text/css" href="resources/css/queries.css" />
-    <link rel="stylesheet" href="vendors/css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="../../resources/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../../resources/css/queries.css" />
+    <link rel="stylesheet" href="../../vendors/css/animate.css" />
     <!-- Google fonts and awesome icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -37,24 +37,13 @@
     />
 
     <!-- Favicons -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/resources/favicons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/resources/favicons/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/resources/favicons/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/resources/favicons/site.webmanifest" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../../favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicons/favicon-16x16.png">
+    <link rel="manifest" href="../../favicons/site.webmanifest.html">
+    <link rel="mask-icon" href="../../favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
     <title>ims-ghana</title>
   </head>
@@ -65,15 +54,15 @@
       <div class="mobile-nav">
         <a href="javascript:void(0)" id="closebtn">&times;</a>
 
-        <a href="/index.html">Home</a>
-        <a href="/services.html">Services</a>
-        <a href="/about.html">About Us</a>
+        <a href="../../index.html">Home</a>
+        <a href="../../services.html">Services</a>
+        <a href="../../about.html">About Us</a>
 
         <a href="tel:+233243837432">
           <i class="fa-solid fa-phone"></i>
         </a>
         <a href="mailto:info@ims-ghana.com">
-          <i class="fa-solid fa-at"></i>
+          <i class="fa-solid fa-envelope"></i>
         </a>
       </div>
     </div>
@@ -81,17 +70,17 @@
       <nav class="header">
         <div class="main-nav">
           <div class="logo-wrap">
-            <a href="#" class="blue-link"
+            <a href="../../index.html" class="blue-link"
               ><img
-                src="/resources/images/ims-blue-logo.png"
+                src="../../resources/images/ims-blue-logo.png"
                 alt="ims-ghana"
                 class="ims-blue-logo"
             /></a>
           </div>
           <ul class="nav-links">
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/services.html">Services</a></li>
-            <li><a href="/about.html">About Us</a></li>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../services.html">Services</a></li>
+            <li><a href="../../about.html">About Us</a></li>
 
             <li>
               <a href="tel:+233243837432">
@@ -101,19 +90,22 @@
             </li>
             <li>
               <a href="mailto:info@ims-ghana.com">
-                <i class="fa-solid fa-at"></i>
+                <i class="fa-solid fa-envelope"></i>
                 <!-- info@ims-ghana.com -->
               </a>
             </li>
           </ul>
-          <a href="#" class="mobile-menu" id="mobile-menu">
+          <a href="motor.html#" class="mobile-menu" id="mobile-menu">
             <i class="fa-solid fa-bars"></i>
           </a>
         </div>
+         <div class="progress-container">
+          <div class="progress-bar" id="myBar"></div>
+         </div>
       </nav>
     </header>
 
-    <section class="section-services-title">
+    <section class="section-services-title" id="anchor">
       <div class="container ">
         <div class="grid-row services-title">
           <h2>Car Insurance</h2>
@@ -128,28 +120,214 @@
     <section class="section-services-list">
         <div class="container ">
           <div class="grid-row flex services-nav">
-              <a class="btn-sm btn-ghost-blue" href="/services.html" >Services</a>
-              <a class="btn-sm btn-ghost-blue" href="./claims.html" >Claims</a>
-              <a class="btn-sm btn-full" href="./motor.html" >Motor </a>
-              <a class="btn-sm btn-ghost-blue" href="./travel.html" >Travel </a>
-              <a class="btn-sm btn-ghost-blue" href="./fire.html" >Fire Insurance</a>
-              <a class="btn-sm btn-ghost-blue" href="./life.html" >Life Insurance</a>
-              <a class="btn-sm btn-ghost-blue" href="./corporate.html" >Corporate Insurance</a>
+              <a class="btn-sm btn-ghost-blue" href="../../services.html" >Services</a>
+              <a class="btn-sm btn-ghost-blue" href="claims.html" >Claims</a>
+              <a class="btn-sm btn-full" href="motor.html" >Motor </a>
+              <a class="btn-sm btn-ghost-blue" href="travel.html" >Travel </a>
+              <a class="btn-sm btn-ghost-blue" href="fire.html" >Fire Insurance</a>
+              <a class="btn-sm btn-ghost-blue" href="life.html" >Life Insurance</a>
+              <a class="btn-sm btn-ghost-blue" href="corporate.html" >Corporate Insurance</a>
           </div>
         </div>
       </section>
       
-      <section class="claims-management-copy">
+      <section class="motor-class">
         <div class="container">
-           
+           <div class="motor-class-row flex">
+             <div class="motor-class-col">
+                <h4>Third Party Policy</h4>
+                <ul>
+                  <li> 
+                    <i class="fa-sharp fa-solid fa-circle-check"></i>
+                    <span>This is the minimum cover allowed under the ACT 1958 with which you can drive a vehicle in Ghana. </span> 
+                   </li>
+                  <li>
+                    <i class="fa-sharp fa-solid fa-circle-check"></i>
+                    <span>It covers Injury, death and property damage to third parties i.e. persons in a car which impacts with your car or pedestrians who are knocked down due to negligence on your part or on the part of your driver.</span> 
+                  </li>
+                  <li>
+                    <i class="fa-sharp fa-solid fa-circle-check"></i>
+                    <span>The minimum limit for third-party property damage at present is GH¢5000, However this can be increased at your request.</span>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-xmark"></i>
+                   <span>It does not cover other accidental damage to your vehicle itself.</span> 
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-xmark"></i>
+                   <span>It does not cover Theft or damage resulting from fire.</span> 
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-xmark"></i>
+                   <span>It does not cover damage to windshield and others that may be considered minor.</span> 
+                  </li>
+                 
+                </ul>
+             </div>
+             <div class="motor-class-col">
+              <h4>Comprehensive Policy</h4>
+              <ul>
+                <li> 
+                  <i class="fa-sharp fa-solid fa-circle-check"></i>
+                  <span>This is the minimum cover allowed under the ACT 1958 with which you can drive a vehicle in Ghana. </span> 
+                 </li>
+                <li>
+                  <i class="fa-sharp fa-solid fa-circle-check"></i>
+                  <span>It covers Injury, death and property damage to third parties i.e. persons in a car which impacts with your car or pedestrians who are knocked down due to negligence on your part or on the part of your driver.</span> 
+                </li>
+                <li>
+                  <i class="fa-sharp fa-solid fa-circle-check"></i>
+                  <span>The minimum limit for third-party property damage at present is GH¢5000, However this can be increased at your request.</span>
+                </li>
+                <li>
+                  <i class="fa-sharp fa-solid fa-circle-check"></i>
+                 <span>It does cover other accidental damage to your vehicle itself.</span> 
+                </li>
+                <li>
+                  <i class="fa-sharp fa-solid fa-circle-check"></i>
+                 <span>It does cover Theft or damage resulting from fire.</span> 
+                </li>
+                <li>
+                  <i class="fa-sharp fa-solid fa-circle-check"></i>
+                 <span>It does cover damage to windshield and others that may be considered minor.</span> 
+                </li>
+               
+              </ul>
+             </div>
+
+           </div>
         </div>
     </section>
+
+    <section class="motor-class">
+      <div class="container">
+         <div class="motor-class-row flex">
+           <div class="motor-class-col">
+              <h4>Third Party Fire & Theft</h4>
+              <ul>
+                <li> 
+                  <i class="fa-sharp fa-solid fa-circle-check"></i>
+                  <span>This is a Third Party Policy that also covers your car against fire and theft. </span> 
+                 </li>
+   
+                <li>
+                  <i class="fa-solid fa-xmark"></i>
+                 <span>It does not cover other accidental damage to your vehicle itself.</span> 
+                </li>
+  
+                <li>
+                  <i class="fa-solid fa-xmark"></i>
+                 <span>It does not cover damage to windshield and others that may be considered minor.</span> 
+                </li>
+               
+              </ul>
+           </div>
+           <div class="motor-class-col">
+            <h4>Third Party Amplified (Enhanced Motor Third Party)</h4>
+            <ul>
+              <li> 
+                <i class="fa-sharp fa-solid fa-circle-check"></i>
+                <span>This is available for customers on third party only or Third-Party Fire & Theft policy. </span> 
+               </li>
+              <li>
+                <i class="fa-sharp fa-solid fa-circle-check"></i>
+                <span>It covers only windscreen, side-mirrors, and minor scratches at an affordable price.</span> 
+              </li>
+              
+              <li>
+                <i class="fa-solid fa-xmark"></i>
+               <span>It does not cover other accidental damage to your vehicle itself.</span> 
+              </li>
+             
+            </ul>
+           </div>
+
+         </div>
+      </div>
+  </section>
+
+    <section class="motor-class">
+      <div class="container">
+         <div class="motor-class-row flex">
+           <div class="motor-class-col">
+              <h4>Motor Comprehensive (CompExtra)</h4>
+              <ul>
+                <li> 
+                  <i class="fa-sharp fa-solid fa-circle-check"></i>
+                  <span> This is a Comprehensive policy that has extra benefit for Loss of use , 
+                    Compensation for mechanical breakdown resulting from misfuelling and Ridesharing 
+                    (P.A. cover extended to 4 additional persons travelling in same car) </span> 
+                 </li>             
+              </ul>
+           </div>
+           <div class="motor-class-col">
+              <h4>Homeprehensive</h4>
+              <ul>
+                <li> 
+                  <i class="fa-sharp fa-solid fa-circle-check"></i>
+                  <span> 
+                    Vehicles and Homes are some of the most valuable assets that one can acquire in 
+                    life and needs to be protected with a single insurance policy.
+                  </span> 
+                 </li>             
+              </ul>
+           </div>
+         </div>
+      </div>
+  </section>
+    <section class="motor-class">
+      <div class="container">
+         <div class="motor-class-row flex">
+           <div class="motor-class-col">
+              <h4>GoGirl Policy</h4>
+              <ul>
+                <li> 
+                  <i class="fa-sharp fa-solid fa-circle-check"></i>
+                  <span> A Comprehensive policy for women that provides free courtesy car at the time of claim </span> 
+                 </li>             
+                <li> 
+                  <i class="fa-sharp fa-solid fa-circle-check"></i>
+                  <span> Facilitates the two (2) year mandatory driver’s license renewal at the Prestige Center (DVLA) </span> 
+                 </li>             
+                <li> 
+                  <i class="fa-sharp fa-solid fa-circle-check"></i>
+                  <span> Donates percentage of your premium to help support the building of a Childhood Cancer Center at the Korle Bu Teaching hospital </span> 
+                 </li>             
+              </ul>
+           </div>
+           <div class="motor-class-col">
+              <h4>Golden Age Comprehensive Motor Insurance</h4>
+              <ul>
+                <li> 
+                  <i class="fa-sharp fa-solid fa-circle-check"></i>
+                  <span> A Comprehensive policy for men above 50 years.</span> 
+                 </li>             
+                <li> 
+                  <i class="fa-sharp fa-solid fa-circle-check"></i>
+                  <span> Provides 24-hour on-call services.</span> 
+                 </li>             
+                       
+                <li> 
+                  <i class="fa-sharp fa-solid fa-circle-check"></i>
+                  <span> Guaranteed courtesy car at the time of a claim </span> 
+                 </li>   
+                 <li> 
+                  <i class="fa-sharp fa-solid fa-circle-check"></i>
+                  <span> Facilitates home medical laboratory services  </span> 
+                 </li>       
+              
+        
+              </ul>
+           </div>
+         </div>
+      </div>
+  </section>
 
     <section class="reach-out">
         <div class="container">
             <div class="contact-details flex">
                 <h3>Lets help find cover for your car</h3>
-                <a href="" class="btn btn-ghost">Contact Us</a>
+                <a target="_blank" href="https://wa.me/233504965034?text=I'd%20like%20to%20make%20an%20inquiry%20" class="btn btn-ghost">Contact Us</a>
             </div>
         </div>
     </section>
@@ -158,17 +336,17 @@
       <div class="grid-row footer-head">
         <ul class="footer-nav">
           <li>
-            <a href="#" class="logo-link"
+            <a href="../../index.html" class="logo-link"
               ><img
-                src="/resources/css/images/ims-white.png"
+                src="https://www.ims-ghana.com/pages/services/resources/images/ims-white-logo.png" 
                 alt="ims-ghana"
                 class="ims-gray-logo"
               />
             </a>
           </li>
-          <li><a href="/about.html">About us</a></li>
-          <li><a href="/services.html">Services</a></li>
-          <li><a href="#">Blog</a></li>
+          <li><a href="../../about.html">About us</a></li>
+          <li><a href="../../services.html">Services</a></li>
+          <li><a href="motor.html#">Blog</a></li>
         </ul>
 
         <ul class="social-links">
@@ -178,13 +356,13 @@
             ></a>
           </li>
           <li>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="motor.html#"><i class="fa-brands fa-twitter"></i></a>
           </li>
           <li>
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="motor.html#"><i class="fa-brands fa-facebook"></i></a>
           </li>
           <li>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="motor.html#"><i class="fa-brands fa-instagram"></i></a>
           </li>
         </ul>
       </div>
@@ -204,7 +382,7 @@
 
     <div class="whatsapp">
       <a
-        href="https://wa.me/233246386799?text=I'd%20like%20to%20make%20an%20inquiry%20"
+        href="https://wa.me/233504965034?text=I'd%20like%20to%20make%20an%20inquiry%20"
         target="_blank"
         class="wapp"
       >
@@ -218,7 +396,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="/vendors/js/jquery.waypoints.min.js"></script>
-    <script src="/resources/js/script.js"></script>
+    <script src="../../vendors/js/jquery.waypoints.min.js"></script>
+    <script src="../../resources/js/script.js"></script>
   </body>
 </html>
