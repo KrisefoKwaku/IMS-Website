@@ -2,14 +2,14 @@
 
 .landing-claim {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 52, 120, 0.8)),
-    url(./images/make-claim.jpeg);
+    url(images/make-claim.jpeg);
 }
 .landing-motor {
   background-image: linear-gradient(
       rgba(0, 52, 120, 0.8),
       rgba(0, 52, 120, 0.8)
     ),
-    url(./images/motor.jpg);
+    url(images/motor.jpg);
   height: 110vh;
 }
 .landing-fire {
@@ -17,7 +17,7 @@
       rgba(0, 52, 120, 0.8),
       rgba(0, 52, 120, 0.7)
     ),
-    url(./images/home-insure.webp);
+    url(images/home-insure.webp);
 }
 
 .landing-claim,
@@ -35,6 +35,17 @@ nav {
   display: flex;
   flex-direction: column;
   padding: 0.1rem 1.5rem;
+}
+.progress-container {
+  width: 100%;
+  height: 1px;
+  background: rgba(252, 252, 252, 0.01);
+}
+
+.progress-bar {
+  height: 1px;
+  background: var(--ims-orange);
+  width: 0%;
 }
 
 .quick-contact {
@@ -87,7 +98,7 @@ nav {
 .nav-links li a:active {
   color: var(--ims-orange);
   font-weight: 400;
-  border-bottom: 2px solid var(--ims-orange);
+  border-bottom: 3px solid var(--ims-orange);
 }
 
 /*--------sticky nav-----*/
@@ -99,6 +110,7 @@ nav {
   z-index: 15;
   box-shadow: 0 1px 1px rgba(161, 161, 161, 0.363);
   background-color: #f2f2f2;
+  transition: 0.5s;
 }
 
 /*--------Mobile Nav-----*/
@@ -114,7 +126,7 @@ nav {
   grid-template: 1fr/1fr 20%;
 }
 .blur {
-  background-color: rgba(2, 2, 103, 0.5);
+  background-color: rgba(2, 2, 103, 0.2);
   filter: blur(4px);
   -webkit-filter: blur(4px);
 }
@@ -178,13 +190,7 @@ nav {
 /*------------------------------------------------------*/
 section {
   padding: 2rem 0;
-  /* border: 2px solid var(--mild-gray); */
 }
-/* .grid-container-section {
-  display: grid;
-  grid-template: 0.15fr 1fr/1fr;
-  height: 100%;
-} */
 
 .section-title {
   display: flex;
@@ -230,15 +236,8 @@ section {
   justify-content: center;
   text-align: center;
 }
-/* .section-services .col i,
-.section-services .col h3,
-.section-services .col p {
-  padding: 0.5rem;
-} */
 
 .section-services .col:hover {
-  /* 
-    transform: scale(1.01); */
   box-shadow: 2px 2px 6px #d4d4d470, -2px -2px 6px #ffffff;
 
   transition: transform 0.5s;
@@ -254,7 +253,6 @@ a.btn-link {
 }
 
 .link {
-  /* justify-content: flex-end; */
   padding: 2rem;
 }
 
@@ -265,32 +263,30 @@ a.btn-link {
   background: rgb(244, 244, 244);
 }
 .team-grid-box {
-  display: grid;
-  grid-template: 1fr / repeat(4, 1fr);
-  margin: 1rem 0;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
-.team-card {
-  /* border:1px solid blue; */
+.team-grid-box .team-card {
+  /* border: 1px solid blue; */
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 14rem;
+  width: 100%;
+  background-color: white;
 }
-.team-card:hover {
-  box-shadow: 4px 4px 10px #d4d4d470, -4px -4px 10px #ffffff;
+.grid-card:hover {
+  background-color: #f2f2f2;
 }
 
-.team-card .team-img {
-  width: 80%;
-  height: auto;
-  margin-bottom: 0.5rem;
-}
 .member-profile {
   margin-bottom: 0.1rem;
   color: var(--ims-blue);
   font-size: 80%;
   display: flex;
   align-items: center;
+  padding: 0.3rem;
 }
 .icon-sm {
   color: var(--ims-orange);
@@ -434,7 +430,7 @@ a.btn-link {
   flex-wrap: wrap;
 }
 /*------------claims management-----------*/
-/* .claims-management-copy .img-col */
+
 .claims-management-copy .copy-col {
   width: 50%;
   padding: 2rem;
@@ -447,9 +443,11 @@ a.btn-link {
 
 .reach-out .contact-details {
   flex-wrap: wrap;
+  gap: 8px;
 }
 .reach-out .contact-details h3 {
   font-weight: bold;
+  text-align: center;
 }
 /*------------------About Us---------------*/
 .section-team-details .long-copy {
@@ -457,7 +455,7 @@ a.btn-link {
   max-width: 80%;
 }
 
-.team-row:nth-child(even) {
+.team-row:nth-child(odd) {
   background: var(--light-gray);
 }
 
@@ -469,11 +467,10 @@ a.btn-link {
 .profile-avatar {
   padding: 1rem;
 }
-/* .profile-card {
-} */
 
 .profile-card {
   line-height: 150%;
+  padding: 1rem;
 }
 
 .profile-card .member-name {
@@ -489,13 +486,117 @@ a.btn-link {
   background-size: cover;
   background-position: center;
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
-    url(/resources/images/services/travel-copy.jpg);
-  height: 600px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
+    url(../images/services/travel-copy.jpg);
+  height: 100%;
 }
-/* .travel-insurance-copy .travel-copy {
-} */
+.travel-copy-row {
+  flex-direction: column;
+  flex-wrap: wrap;
+}
 
+.travel-insurance-copy .travel-copy {
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.travel-copy .long-copy {
+  max-width: 80%;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+.travel-copy ul li {
+  padding: 0.3rem;
+  display: flex;
+}
+.travel-copy ul li i {
+  margin: 3px;
+}
+
+/*-----------------Motor Insurance------------*/
+.motor-class {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.motor-class-row {
+  flex-wrap: wrap;
+}
+.motor-class-col {
+  padding: 1rem;
+  width: 50%;
+}
+.motor-class-col ul li {
+  display: flex;
+  margin: 1rem 0;
+}
+.motor-class-col ul li i {
+  margin: 4px;
+  color: var(--ims-blue);
+}
+
+/*--------------FIRE INSURANCE--------------*/
+.fire-insurance {
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
+    url(../images/services/corporate.jpg);
+}
+.fire-insurance .fire-copy {
+  border: 1px solid white;
+  padding: 1rem;
+  text-align: center;
+  color: var(--white);
+  line-height: 150%;
+  font-weight: bold;
+}
+/*---------------LIFE INSURANCE------------------*/
+.life-insurance {
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
+    url(../images/services/corporate.jpg);
+}
+.life-insurance .life-copy {
+  border: 1px solid var(--ims-orange);
+  padding: 1rem;
+  text-align: center;
+  color: var(--white);
+  line-height: 150%;
+  font-weight: bold;
+  flex-direction: column;
+}
+.life-insurance .life-copy ul li {
+  display: flex;
+  align-items: center;
+}
+.life-insurance .life-copy ul li i {
+  margin: 4px;
+  color: var(--ims-orange);
+}
+
+/*------------- CORPORATE POLICIES------------ */
+.corporate-product-list {
+  flex-direction: column;
+}
+
+.corporate-product-list h4 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.corporate-product-list ul {
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+.corporate-product-list ul li {
+  padding: 1rem;
+  background: #f2f2f2;
+  color: var(--ims-blue);
+  font-weight: 700;
+}
 /*---------------------------------------------*/
 
 footer {
@@ -535,18 +636,9 @@ footer a:hover {
   text-align: center;
 }
 
-/*---------------------------------------------*/
-/*Animations
-/*----------------------------------------------*/
-/* .js-wp-1,
-.js-wp-6 {
-  opacity: 0;
-  animation-duration: 1s;
+.copy-right a {
+  padding: 0;
 }
-.js-wp-1.animated,
-.js-wp-6.animated {
-  opacity: 1;
-} */
 
 .wapp {
   font-size: 3rem;
@@ -554,12 +646,12 @@ footer a:hover {
   color: #25d366;
   position: fixed;
   left: auto;
-  top: 90vh;
+  top: 85vh;
   right: 0%;
   bottom: 0%;
   z-index: 99999;
   margin-right: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 45px;
   border-radius: 500px;
   box-shadow: 141px 141px 20px 0 rgba(103, 103, 103, 0.183);
 }

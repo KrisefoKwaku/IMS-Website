@@ -17,20 +17,14 @@ $(document).ready(function () {
       $("#sidenav").addClass(" no-show");
     }
   });
-
-  //===================Scroll Nav bar============//
-
-  $("#Motor").waypoint(function (direction) {
-    if (direction == "down") {
-      $("nav").addClass("sticky");
-      $(".white-link").addClass("no-show");
-      $(".blue-link").removeClass("no-show");
-    } else if (direction == "up") {
-      $("nav").removeClass("sticky");
-      $(".white-link").removeClass("no-show");
-      $(".blue-link").addClass("no-show");
+  $(".blur").click(function () {
+    let sideModal = document.getElementById("sidenav");
+    console.log(`clicked ${sideModal.classList}`);
+    if (!sideModal.classList.contains("no-show")) {
+      $("#sidenav").addClass(" no-show");
     }
   });
+
 
   // Select all links with hashes
   $('a[href*="#"]')
@@ -78,3 +72,30 @@ $(document).ready(function () {
 
   //closing tag
 });
+
+//====Scroll behavior========//
+
+$(window).on("scroll", function () {
+  if ($(window).scrollTop()) {
+    $("nav").addClass("sticky");
+    $(".white-link").addClass("no-show");
+    $(".blue-link").removeClass("no-show");
+  } else {
+    $("nav").removeClass("sticky");
+    $(".white-link").removeClass("no-show");
+    $(".blue-link").addClass("no-show");
+  }
+});
+// When the user scrolls the page, execute scrollBar
+window.onscroll = function () {
+  scrollBar();
+};
+
+function scrollBar() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}

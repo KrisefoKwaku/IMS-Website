@@ -14,13 +14,7 @@
   }
 
   .team-grid-box {
-    display: grid;
-    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
-    margin: 1rem 0;
-  }
-
-  .sidenav {
-    grid-template: 1fr/1fr 1fr;
+    margin: 1rem auto;
   }
 
   .mobile-nav #closebtn {
@@ -29,8 +23,11 @@
   }
 }
 
-/*--Small phone to tablets: from 481px to 767px--*/
-@media only screen and (max-width: 767px) {
+/*--Small phone to tablets: from 481px to 805px--*/
+@media only screen and (max-width: 805px) {
+  .sidenav {
+    grid-template: 1fr/1fr 30%;
+  }
   .quick-contact,
   nav .nav-links {
     display: none;
@@ -51,10 +48,32 @@
   .social-links {
     justify-content: center;
   }
+
+  .motor-class-col {
+    width: 100%;
+  }
+  .claims-management-copy .claims-pane {
+    flex-direction: column;
+  }
+  .claims-management-copy .copy-col,
+  .claims-management-copy .img-col {
+    width: 100%;
+  }
+  .claims-management-copy .copy-col,
+  .claims-management-copy .card {
+    padding: 0;
+  }
+  .team-row .team-card {
+    display: grid;
+    grid-template: 1fr/40% 1fr;
+  }
 }
 
 /*--Small phones: from 0 to 480px --*/
 @media only screen and (max-width: 480px) {
+  .sidenav {
+    grid-template: 1fr/1fr 1fr;
+  }
   h2 {
     font-size: 400;
   }
@@ -76,17 +95,12 @@
     box-shadow: 2px 2px 6px #d4d4d470, -2px -2px 6px #ffffff;
   }
 
-  .team-grid-box {
-    grid-template: repeat(4, 1fr) / 1fr;
-    margin: 1rem 0;
+  .team-row .team-card {
+    display: grid;
+    grid-template: 1fr/ 1fr;
   }
-
   .contact-row {
     flex-direction: column;
-  }
-
-  .partners-list {
-    grid-template: repeat(11, 1fr) / 1fr;
   }
 
   .footer-head {
@@ -107,5 +121,8 @@
   }
   .copy-right:first-child {
     font-size: small;
+  }
+  .contact-card {
+    align-items: center;
   }
 }

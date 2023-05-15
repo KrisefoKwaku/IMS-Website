@@ -102,6 +102,7 @@ h2:after {
   margin: 0 auto;
   overflow: auto;
   padding: 0 2rem;
+  content-visibility: auto;
 }
 
 .vh {
